@@ -1,0 +1,35 @@
+OptionName	Value
+targetID	MT_H37
+nCores	4
+genomicFastaFile	$BOWTIE2_INDEX_PATH/FastaFiles/MT_H37RV_V3.fasta
+fastqData.path	./fastqs
+results.path	./results
+tmp.path	/tmp
+bowtie2Program	$BOWTIE2_PROGRAM
+bowtie2Index.path	$BOWTIE2_INDEX_PATH
+bowtie2InputOptions	 -q  --phred33-quals
+bowtie2ScoringOptions	
+bowtie2PairOptions	
+bowtie2OtherOptions	
+trim5	2
+trim3	0
+maxMultiHits	10
+RiboIndex	MTb.riboClear_idx
+RiboAlignmentPolicy	 --very-sensitive 
+RiboMap	MTb.riboClearMap.txt
+GenomicIndex	MTb.genomic_idx
+GenomicAlignmentPolicy	 --very-sensitive 
+SpliceIndex	
+SpliceAlignmentPolicy	
+SpliceMapPrefix	spliceMap
+readBufferSize	4000000
+investigate.NoHits	TRUE
+DE.minimumRPKM	2
+DE.weightFoldChange	1
+DE.weightPvalue	2
+blastProgram	$BLAST_PROGRAM
+blastIndex.path	$BLASTINDEX_PATH
+blastIndex	NT/nt
+ForwardAdapter	AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT
+ReverseAdapter	CAAGCAGAAGACGGCATACGAGCTCTTCCGATCT
+Adapter.minimumOverlap	20
